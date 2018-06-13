@@ -1,29 +1,25 @@
 
 
-.header{
+
+.header{ /* this is a flex container*/
     height: 69px;
     width:100%;
-
     position:fixed;
     top:0;
     left:0;
-
+    z-index:10;
+    background-color: $color-background-primary;
     border-bottom: 1px solid $color-text-primary;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    
     -webkit-flex-flow: row wrap;
     justify-content: flex-start; 
+    -webkit-box-align:   center;
+       -moz-box-align:   center;
+            align-items: center;
 }
 
-.logo{
+.logo{ /* this is a flex item*/
     flex: 1;
-    max-height:50px;
-    height:50px;
     margin-left:1rem;
 
     & img{

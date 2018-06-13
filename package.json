@@ -1,20 +1,17 @@
 {
-  "name": "natours",
+  "name": "teacozy",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "tea webpage",
   "main": "index.js",
   "scripts": {
-    "devserver": "live-server",
-    "compile:sass": "node-sass sass/main.scss resources/css/style.css"
+    "compile:sass": "node-sass sass/main.scss resources/css/style.css -w"
   },
-  "author": "Jonas",
+  "author": "Christina Bögh",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "concat": "^1.0.3",
-    "live-server": "^1.2.0",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
+    "node-sass": "^4.5.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

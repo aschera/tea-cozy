@@ -1,0 +1,31 @@
+
+/* ************* Section with the mission statement ************* */
+.bigImage{
+    
+        &--img{ /*this is a flexbox container */ 
+            background-image: url(../img/img-mission-background.jpg);
+            height:700px;
+            width:1200px;
+            margin:0 auto;
+            z-index:-1;
+        
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:    center;     //left to right
+            align-items:        center;     // up and down
+            align-content:      center;     // up and down
+        }
+    }
+
+    .mission-text{ /*this is a flexbox item and a flexbox container */ 
+        width:100%;
+        background-color: $color-background-primary;
+        padding:1rem;
+        flex:1;
+    
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:    center;     //left to right
+        align-items:        center;     // up and down
+        align-content:      center;     // up and down
+    }
