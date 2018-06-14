@@ -1,7 +1,8 @@
 
-/* ************* Section with the mission statement ************* */
+// Holds the image and the mission statement.
 .bigImage{
-    
+
+        // box that hold the bg image
         &--img{ /*this is a flexbox container */ 
             background-image: url(../img/img-mission-background.jpg);
             height:700px;
@@ -17,6 +18,7 @@
         }
     }
 
+    // the centered text in the middle.
     .mission-text{ /*this is a flexbox item and a flexbox container */ 
         width:100%;
         background-color: $color-background-primary;

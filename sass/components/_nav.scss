@@ -1,5 +1,5 @@
 
-
+//the top right navigation menu
 .main-nav { /* this is a flex container and a flex item*/
     flex: 10;
     display: flex;
@@ -7,10 +7,11 @@
     justify-content: flex-end; 
 }
 
+//the individual navigation menu items
 .main-nav__item { /* this is a flex item*/
     padding:1rem;
     span{
-        padding:0.5rem;
+        padding:0.2rem;
         text-decoration: underline;
     }
 }

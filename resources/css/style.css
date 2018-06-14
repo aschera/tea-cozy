@@ -30,10 +30,9 @@ html {
   /* this is a flex item*/
   padding: 1rem; }
   .main-nav__item span {
-    padding: 0.5rem;
+    padding: 0.2rem;
     text-decoration: underline; }
 
-/* ************* Section with the mission statement ************* */
 .bigImage--img {
   /*this is a flexbox container */
   background-image: url(../img/img-mission-background.jpg);
@@ -65,12 +64,8 @@ html {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: space-around; }
 
 .tea-header {
@@ -85,19 +80,79 @@ html {
   /*this is a flex container and a flex-item*/
   width: 1000px;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  align-items: center; }
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around; }
   .tea-cozyImages--image {
     /*this is a flex-item*/
-    flex: 1; }
+    flex: 1 1;
+    max-width: 333.33px; }
   .tea-cozyImages--image img {
     height: 200px;
     width: 300px;
     margin-bottom: 10px;
     margin-top: 10px; }
+
+.location {
+  width: 100%;
+  margin-top: 3rem; }
+
+.location-box {
+  /*this is a flexbox container */
+  height: 500px;
+  background-image: url(../img/img-locations-background.jpg);
+  background-size: cover;
+  background-position: top;
+  width: 1200px;
+  margin: 0 auto;
+  z-index: -1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .location-box h2 {
+    margin-bottom: 15px; }
+
+.location-items {
+  /*this is a flexbox container */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
+
+.location-items1,
+.location-items2,
+.location-items3 {
+  padding: 0.5rem;
+  width: 300px;
+  flex: 1;
+  background-color: black;
+  opacity: 1;
+  margin-right: 40px; }
+  .location-items1 h4,
+  .location-items2 h4,
+  .location-items3 h4 {
+    padding: 1rem 0; }
+
+.location-items3 {
+  margin: 0; }
+
+footer {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem; }
+
+.footer-contact {
+  height: 200px; }
+  .footer-contact h2, .footer-contact h5 {
+    margin-bottom: 1.5rem; }
+
+.copyright-text {
+  float: left;
+  margin-left: 20px; }
 
 .header {
   /* this is a flex container*/
@@ -110,10 +165,8 @@ html {
   background-color: black;
   border-bottom: 1px solid seashell;
   display: flex;
-  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
-  -webkit-box-align: center;
-  -moz-box-align: center;
   align-items: center; }
 
 .logo {

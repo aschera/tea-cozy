@@ -1,0 +1,53 @@
+
+.location {
+    width:100%;
+    margin-top:$margin-small;
+}
+
+// this is the container that holds the heading - and has the background mage
+.location-box { /*this is a flexbox container */ 
+    height:500px;
+    background-image: url(../img/img-locations-background.jpg);
+    background-size: cover;
+    background-position:top;
+    width:1200px;
+    margin:0 auto;
+    z-index:-1;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:    center;     //left to right
+    align-items:        center;     // up and down
+    align-content:      center;     // up and down
+
+    & h2{
+        margin-bottom:15px;
+    }
+}
+
+
+//the container for the black boxes.
+.location-items { /*this is a flexbox container */ 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:    space-around;     //left to right
+    align-items:        center;     // up and down
+    align-content:      center;     // up and down
+}
+
+.location-items1,/*this is a flexbox item */ 
+.location-items2,
+.location-items3 {
+    padding:0.5rem;
+    width:300px;
+    flex:1;
+    background-color: $color-background-primary;
+    opacity:1;
+    margin-right:40px;
+
+    & h4{padding:1rem 0;}
+}
+
+.location-items3 {
+    margin:0; //this is the last box and its needs no margin: with margin the boxes arent centered :-)
+}
