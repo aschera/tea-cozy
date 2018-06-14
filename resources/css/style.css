@@ -32,6 +32,15 @@ html {
   .main-nav__item span {
     padding: 0.2rem;
     text-decoration: underline; }
+  .main-nav__item a {
+    color: seashell; }
+
+.main-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
 
 .bigImage--img {
   /*this is a flexbox container */
@@ -127,7 +136,7 @@ html {
 .location-items2,
 .location-items3 {
   width: 300px;
-  flex: 1;
+  flex: 1 1;
   background-color: black;
   opacity: 1;
   margin-right: 40px; }
@@ -177,7 +186,7 @@ footer {
 .logo {
   /* this is a flex item*/
   flex: 1;
-  margin-left: 1rem; }
+  margin-left: 10px; }
   .logo img {
     max-height: 50px;
     height: 50px; }

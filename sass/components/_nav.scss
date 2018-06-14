@@ -10,9 +10,12 @@
 //the individual navigation menu items
 .main-nav__item { /* this is a flex item*/
     padding:1rem;
-    span{
+    span {
         padding:0.2rem;
         text-decoration: underline;
+    }
+    a {
+        color:$color-text-primary;
     }
 }
 

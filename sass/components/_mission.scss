@@ -1,7 +1,14 @@
 
-// Holds the image and the mission statement.
-.bigImage{
+.main-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:    center;     //left to right
+    align-items:        center;     // up and down
+    align-content:      center;     // up and down
+}
 
+// Holds the image and the mission statement.
+.bigImage {
         // box that hold the bg image
         &--img{ /*this is a flexbox container */ 
             background-image: url(../img/img-mission-background.jpg);
@@ -19,7 +26,7 @@
     }
 
     // the centered text in the middle.
-    .mission-text{ /*this is a flexbox item and a flexbox container */ 
+    .mission-text { /*this is a flexbox item and a flexbox container */ 
         width:100%;
         background-color: $color-background-primary;
         padding:1rem;
@@ -30,4 +37,4 @@
         justify-content:    center;     //left to right
         align-items:        center;     // up and down
         align-content:      center;     // up and down
-    }
+}

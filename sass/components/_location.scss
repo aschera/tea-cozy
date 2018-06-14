@@ -34,12 +34,13 @@
     align-items:        center;     // up and down
     align-content:      center;     // up and down
 }
+
 .location-items1,/*this is a flexbox item */ 
 .location-items2,
 .location-items3 {
 
     width:300px;
-    flex:1;
+    flex:1 1;
     background-color: $color-background-primary;
     opacity:1;
     margin-right:40px;
