@@ -28,6 +28,7 @@
     align-content:space-around;
 
     &--image { /*this is a flex-item*/
+        padding:5px;
         flex:1 1;
         max-width:333.33px; //so the last two children have same space between them as the first row.
     }
@@ -35,8 +36,7 @@
     &--image img {
         height:200px;
         width:300px;
-        margin-bottom:10px;
-        margin-top:10px;
+        margin:10px;
     }
 }
 
